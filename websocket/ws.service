@@ -1,5 +1,5 @@
 [Unit]
-Description=WebSocket
+Description=WebSocket Service
 Documentation=https://github.com/jaka1m
 After=syslog.target network-online.target
 
@@ -8,6 +8,7 @@ User=root
 NoNewPrivileges=true
 ExecStart=/usr/bin/ws -f /usr/bin/tun.conf
 Restart=on-failure
+RestartSec=5
 RestartPreventExitStatus=23
 LimitNPROC=10000
 LimitNOFILE=1000000
