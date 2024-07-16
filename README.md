@@ -23,6 +23,8 @@ Follow these steps to get started with WS-VPN:
 3. **Run the Installation Script**:
    Execute the installation script to set up WS-VPN:
    ```bash
+   apt install dos2unix -y
+   dos2unix install.sh
    bash install.sh
    ```
 
