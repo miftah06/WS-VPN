@@ -2,9 +2,6 @@
 websocket 80, 433 vpn installer by Miftah Izharuddin
 Here's a sample README.md file for your WS-VPN project on GitHub:
 
-```markdown
-# WS-VPN
-
 WS-VPN is a WebSocket VPN solution designed for secure tunneling and proxying. This repository contains all the necessary scripts and configurations to set up and run your own WebSocket VPN.
 
 ## Installation Instructions
