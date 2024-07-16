@@ -27,7 +27,11 @@ Follow these steps to get started with WS-VPN:
    dos2unix install.sh
    bash install.sh
    ```
-
+3. **Run the Installation Script with python**:
+   Execute the installation script to set up WS-VPN:
+   ```bash
+   python3 install.py
+   ```
 ## Usage
 
 After installation, you can start the WebSocket VPN services. Make sure to check the service status and logs if you encounter any issues.
