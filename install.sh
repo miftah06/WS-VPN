@@ -20,7 +20,7 @@ install_acme() {
     ~/.acme.sh/acme.sh --register-account -m "$email"
 
     echo "Generating certificates for $domain..."
-    ~/.acme.sh/acme.sh --issue --standalone -d "$domain" --force
+    ~/.acme.sh/acme.sh --issue --standalone -d "$domain"
     ~/.acme.sh/acme.sh --install-cert -d "$domain" \
         --key-file /etc/ssl/cert.key \
         --fullchain-file /etc/ssl/cert.pem
@@ -75,10 +75,6 @@ if [[ $EUID -ne 0 ]]; then
     echo "This script must be run as root"
     exit 1
 fi
-
-# Install idn command for IDN handling
-apt-get update
-apt-get install -y libidn11
 
 # Prompt for domain and email input
 domain=$(get_domain)
