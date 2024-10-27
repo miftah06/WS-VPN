@@ -13,7 +13,7 @@ def run_command(command):
 def install_service(service_name, service_file):
     """Install and enable a systemd service."""
     print(f"Installing {service_name} service...")
-    run_command(f"cp {service_file} /etc/systemd/system/{service_name}")
+    run_command(f"cp -r {service_file} /etc/systemd/system/{service_name}")
     run_command(f"systemctl enable {service_name}")
     run_command(f"systemctl start {service_name}")
     print(f"{service_name} service installed and started.")
